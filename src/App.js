@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import RouterPage from './routercomp/RouterPage'
+import QuizStartPage from './routercomp/QuizStartPage'
+import QuizQuestionPage from './routercomp/QuizQuestionPage'
+import Questionhamb from './routercomp/Questionhamb'
+import QuizResult from './routercomp/QuizResult'
+import QuizQuestionfromExcel from './routercomp/QuizQuestionfromExcel'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RouterPage/>
+      {/* <QuizQuestionfromExcel/> */}
+      {/* <QuizStartPage/> */}
+      {/* <QuizQuestionPage/> */}
+      {/* <Questionhamb/> */}
+      {/* <QuizResult/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
